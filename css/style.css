@@ -1,0 +1,399 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+header div{
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    margin-left: 100px;
+    padding: 25px;
+
+}
+
+header .nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 130px;
+}
+
+header .nav ul{
+    list-style: none;
+}
+
+header .nav ul li{
+    float: left;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+header .nav ul li a{
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header .nav ul li a:hover{
+    color: #8392fd;
+}
+
+/*Section One*/
+
+.section1{
+    background-color: #f9f9ff;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.half1, .half2{
+    width: 50%;
+    align-items: center;
+    
+}
+
+.half1{
+    margin-left: 120px;
+    margin-bottom: 120px;
+}
+
+.half2{
+    padding-right: 90px;
+    margin-top: 50px;
+}
+
+.half2 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.half1 h3{
+    font-weight: 400;
+    font-size: 15px;
+    color: RGB(34, 34, 34);
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+}
+
+.half1 h1{
+    font-size: 60px;
+    color: #222222;
+    font-family: Poppins, sans-serif;
+}
+
+.half1 p{
+    font-size: 15px;
+    color: #838389;
+    font-family: Poppins, sans-serif;
+    text-align: left;
+    align-items: center;
+    width: 80%;
+    line-height: 1.5;
+}
+
+.half1 input{
+    padding: 12px 25px;
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #7ea2f7;
+    outline: none;
+    border: 1px solid #7ea2f7;
+    font-weight: 540;
+}
+
+.half1 input:hover{
+    box-shadow: 5px 10px 30px rgba(130,147,255, 0.7);
+    transition: all 0.5s ease-in 0.25;
+    outline: none;
+
+}
+    
+/*Section Two*/
+
+.section2{
+    width: 100%;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 div{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.section2 img{
+    width: 95%;
+    height: auto;
+}
+
+.section2 .img2{
+    padding-left: 90px;
+}
+
+.text2 h3{
+    font-weight: 400;
+    color: rgb(34, 34, 34);
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.text2 h1{
+    color: rgb(34, 34, 34);
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+}
+
+.text2 p{
+    font-size: 15px;
+    color: rgb(119, 119, 119);
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    width: 80%;
+}
+
+.text2 input{
+    font-size: 14px;
+    padding: 12px 22px;
+    outline: none;
+    color: #fff;
+    background-color: #7ea2f7;
+    font-weight: 560;
+    text-transform: uppercase;
+    border: 1px solid #7ea2f7;
+}
+
+.text2 input:hover{
+    box-shadow: 5px 10px 30px rgba(130,147,255, 0.7);
+    transition: all 0.5s ease-in 0.25;
+    outline: none;
+}
+
+/*Section Three*/
+
+.section3{
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offer h1{
+    font-size: 36px;
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+    line-height: 10px;
+}
+
+.offer p{
+    color: rgb(119, 119, 119);
+    width: 650px;
+    line-height: 1.5;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Poppins, sans-serif;
+    word-spacing: 1.8px;
+    padding: 5px;
+}
+
+.service{
+    width: 80%;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+.ser1, .ser2{
+    width: 100%;
+    overflow: hidden;
+}
+
+.ser2{
+    padding-top: 35px;
+}
+
+.ser1 div, .ser2 div{
+    width: 32%;
+    float: left;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.service i{
+    font-size: 30px;
+    color: rgba(34, 34, 34, 0.9);
+}
+
+.service h1{
+    color: rgba(34, 34, 34, 0.9);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+    padding-top: 20px;
+}
+
+.service p{
+    color: rgb(119, 119, 119);
+}
+
+.ser1 div:hover{
+    background-color: #2a2f4e;
+}
+
+.ser1 div:hover p{
+    color: #f9f9ff;
+}
+
+.ser1 div:hover i{
+    color: #f9f9ff;
+}
+
+.ser1 div:hover h1{
+    color: #f9f9ff;
+}
+
+.ser2 div:hover{
+    background-color: #2a2f4e;
+}
+
+.ser2 div:hover p{
+    color: #f9f9ff;
+}
+
+.ser2 div:hover i{
+    color: #f9f9ff;
+}
+
+.ser2 div:hover h1{
+    color: #f9f9ff;
+}
+
+/*Section Four*/
+
+.section4{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(131,145,255);
+}
+
+.section4 div{
+    float: left;
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.section4 h1,p{
+    text-align: center;
+    color: rgb(255,255,255);
+    font-family: Poppins, sans-serif;
+}
+
+.section4 h1{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 0px;
+}
+
+.section4 p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*Portfolio Part*/
+
+.port{
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.port .likha{
+    text-align: center;
+    padding: 120px 0;
+}
+
+.port .likha h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+    color: rgb(34, 34, 34);
+}
+
+.port .likha p{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Poppins, sans-serif;
+    color: rgb(119, 119, 119);
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.port .imo1, .imo2{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    padding: 60px 50px;
+    display: block;
+    margin: 0 65px;
+    
+}
+
+.imo1 div, .imo2 div{
+    width: 32%;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+
+.imo1 h1, .imo2 h2{
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+}
+
+.imo1 p, .imo2 p{
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Poppins, sans-serif;
+}
+
+.imo1 img:hover, .imo2 img:hover{
+    background: linear-gradient(40deg, #4f5d80, 40%, #10557c, 100%);
+    opacity: 0.4;
+    transition: all 0.3s ease-in-out;
+}

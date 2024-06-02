@@ -54,6 +54,19 @@ header .nav ul li a:hover{
     color: #8392fd;
 }
 
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    float: right;
+    line-height: 80px;
+    margin-right: -170px;
+}
+
+#check{
+    display: none;
+}
+
 /*Section One*/
 
 .section1{
@@ -114,6 +127,7 @@ header .nav ul li a:hover{
 .half1 input{
     padding: 12px 25px;
     font-size: 14px;
+    cursor: pointer;
     font-family: Poppins, sans-serif;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -313,7 +327,7 @@ header .nav ul li a:hover{
     left: 100px;
 }
 
-.section4 h1,p{
+.section4 h1{
     text-align: center;
     color: rgb(255,255,255);
     font-family: Poppins, sans-serif;
@@ -326,8 +340,10 @@ header .nav ul li a:hover{
 }
 
 .section4 p{
+    text-align: center;
     font-size: 15px;
     font-weight: 300;
+    color: rgb(255,255,255);
 }
 
 /*Portfolio Part*/
@@ -359,7 +375,7 @@ header .nav ul li a:hover{
     margin-bottom: 30px;
 }
 
-.port .imo1, .imo2{
+.port .imo1{
     width: 100%;
     height: auto;
     justify-content: center;
@@ -369,6 +385,17 @@ header .nav ul li a:hover{
     display: block;
     margin: 0 65px;
     
+}
+
+.port .imo2{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    padding: 60px 50px;
+    display: block;
+    margin: 0 65px;
 }
 
 .imo1 div, .imo2 div{
@@ -396,4 +423,314 @@ header .nav ul li a:hover{
     background: linear-gradient(40deg, #4f5d80, 40%, #10557c, 100%);
     opacity: 0.4;
     transition: all 0.3s ease-in-out;
+}
+
+/*Pricing Table Start*/
+
+.section_pricing{
+    width: 100%;
+    height: 700px;
+    padding-top: 15px;
+    margin-bottom: 60%;
+}
+
+.section_pricing .pricing_text{
+    text-align: center;
+    padding: 5% 0;
+    margin-top: 57%;
+}
+
+.section_pricing .pricing_text h1{
+    font-size: 40px;
+    line-height: 0;
+    padding-top: 30px;
+}
+
+.section_pricing .pricing_text p{
+    color: rgb(119, 119, 119);
+}
+
+.section_pricing .pricing_card{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.section_pricing .card1{
+    width: 300px;
+    height: 575px;
+    background-color: rgb(249, 249, 255);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section_pricing .card1 h1{
+    font-size: 40px;
+    padding-top: 8px;
+}
+
+.section_pricing .card1 .price{
+    font-size: 30px;
+}
+.section_pricing .card1 input{
+    outline: none;
+    background-color: #8293ff;
+    color: white;
+    font-size: 25px;
+    padding: 6px 60px;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.section_pricing .card1:hover{
+    background-color: #8293ff;
+    color: white;
+    transition: all 0.25s ease-in;
+    scale: (2.05);
+    border: 1px solid rgba(130, 147, 255, 0.5);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+}
+
+.section_pricing .card1:hover input{
+    color: rgba(0, 0, 0, 0.9);
+    background-color: white;
+}
+
+/*footer*/
+
+footer{
+    background-color: rgb(4, 9, 13);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    color: white;
+    margin-top: 200px;
+}
+
+footer .foot{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+footer .foot .foot1 p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer .foot .foot1 input{
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 10px 150px 10px 10px;
+}
+
+footer .foot .foot1 button{
+    font-size: 18px;
+    color: white;
+    background-color: #8293ff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px;
+}
+
+footer .foot .foot1 i{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 2px 5px;
+
+}
+
+footer .foot .foot1 i:hover{
+    color: #8293ff;
+}
+
+/*Responsive*/
+
+@media (max-width:768px){
+    header{
+        width: 100%;
+        height: auto;
+    }
+    header .logo{
+        margin-left: 30px;
+        padding: 20px;
+    }
+    .checkbtn{
+        display: block !important;
+    }
+    header .nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f9f9ff;
+        top: 54px;
+        left: -200%;
+        transition: all .1s;
+    }
+    header .nav ul li{
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    header .nav ul li a{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    .section1{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .half1{
+        margin: auto;
+        padding: 0;
+    }
+    .half1 h3{
+        font-size: 15px;
+    }
+    .half1 h1{
+        font-size: 30px;
+    }
+    .half2 img{
+        margin-left: 90px;
+        margin-top: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+    .section2{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        top: 150px;
+        position: relative;
+    }
+    .section2 .img2 img{
+        position: relative;
+        right: 120px;
+    }
+    .section2 div{
+        width: 100%;
+    }
+    .text2{
+        position: relative;
+        left: 15px;
+        text-align: center !important;
+    }
+    .text2 h3{
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .text2 h1{
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .text2 p{
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.9);
+        margin-left: 50px !important;
+    }
+    .section3{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 250px;
+    }
+    .offer > h1{
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .offer p{
+        width: 80%;
+    }
+    .ser1 div, .ser2 div{
+        clear: left;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .section4{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 500px;
+    }
+    .section4 div{
+        clear: left;
+    }
+    .port{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 500px;
+        bottom:500px;
+    }
+    .port div{
+        clear: left;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .port div h1{
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .port div p{
+        width: 80%;
+    }
+   
+    .section_pricing{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 600px;
+    }
+    .section_pricing .pricing_text h1{
+        font-size: 28px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .section_pricing .pricing_text p{
+        width: 80%;
+        margin: auto;
+       
+    }
+    .section_pricing .pricing_card{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        left: 37px;
+    }
+    .card1{
+        margin-top: 50px;
+    }
+    footer{
+        float: left;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 200em;
+    }
+    footer .foot{
+        display: block;
+        position: relative;
+        top: 150px;
+    }
+    .foot1 .abp{
+        width: 80%;
+    }
+
+
 }
